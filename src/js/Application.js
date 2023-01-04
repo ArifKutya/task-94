@@ -24,6 +24,8 @@ export default class Application extends EventEmitter {
       return element + food;
 
     })
-    document.getElementById("emojis").innerHTML = monkey;
+    const para = document.createElement("p");
+    para.innerHTML = monkey;
+    document.getElementById("emojis").appendChild(para);
   }
 }
